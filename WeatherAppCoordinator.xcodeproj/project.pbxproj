@@ -18,6 +18,7 @@
 		17C0D8282573ACE000D6CCC2 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C0D8272573ACE000D6CCC2 /* CustomBackButton.swift */; };
 		17C0D82B2573C8B300D6CCC2 /* WeatherFetcherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C0D82A2573C8B300D6CCC2 /* WeatherFetcherAPI.swift */; };
 		17C0D8312573D00400D6CCC2 /* WeatherDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C0D8302573D00400D6CCC2 /* WeatherDayCell.swift */; };
+		17CFE0ED257E01A500B82030 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CFE0EC257E01A500B82030 /* UIView.swift */; };
 		17D23F1D25638255002C59E6 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D23F1C25638255002C59E6 /* MainCoordinator.swift */; };
 		17D23F2025638332002C59E6 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D23F1F25638332002C59E6 /* ApplicationCoordinator.swift */; };
 		17D23F23256385C4002C59E6 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D23F22256385C4002C59E6 /* Detail.storyboard */; };
@@ -42,6 +43,7 @@
 		17C0D8272573ACE000D6CCC2 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 		17C0D82A2573C8B300D6CCC2 /* WeatherFetcherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFetcherAPI.swift; sourceTree = "<group>"; };
 		17C0D8302573D00400D6CCC2 /* WeatherDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayCell.swift; sourceTree = "<group>"; };
+		17CFE0EC257E01A500B82030 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		17D23F1C25638255002C59E6 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		17D23F1F25638332002C59E6 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		17D23F22256385C4002C59E6 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				17FCB4C025611911002CBB5B /* Assets.xcassets */,
 				17FCB4C225611911002CBB5B /* LaunchScreen.storyboard */,
 				17FCB4C525611911002CBB5B /* Info.plist */,
+				17CFE0EC257E01A500B82030 /* UIView.swift */,
 			);
 			path = WeatherAppCoordinator;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				17C0D7D92572C92500D6CCC2 /* DetailWeatherViewController.swift in Sources */,
 				17C0D82B2573C8B300D6CCC2 /* WeatherFetcherAPI.swift in Sources */,
 				17FCB4CF25611E36002CBB5B /* WeekWeather.swift in Sources */,
+				17CFE0ED257E01A500B82030 /* UIView.swift in Sources */,
 				171E42412563806F00ADB898 /* Storyboards.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

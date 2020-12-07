@@ -14,13 +14,19 @@ protocol GeneralViewControllerDelegate : AnyObject {
     func goToDetail()
 }
 
-final class GeneralViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    @IBOutlet var tableView: UITableView! {
+final class GeneralViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate {
+ 
+    @IBOutlet weak var aaa: NSLayoutConstraint!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var firstView: UIView!
+    
+    @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.dataSource = self
             tableView.delegate = self
         }
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) { }
     
@@ -68,5 +74,36 @@ final class GeneralViewController: UIViewController, UITableViewDataSource, UITa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         delegateMain?.goToDetail()
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        if(offsetY > 0) {
+        self.aaa.constant = 300
+        } else {
+            self.aaa.constant = 150
+
+        }
+
+
+    
+            
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        self.firstView.superview!.setNeedsLayout()
+        self.firstView.superview!.layoutIfNeeded()
+
+        // Now modify bottomView's frame here
+    }
+    
+    
+}
+
+
+extension GeneralViewController {
+    
+   
 }
 
